@@ -1,6 +1,10 @@
 {
   "name": "Storyteller",
   "version": "1.0.0",
+  "license" :{
+    "type" : "ISC",
+    "url" : "https://opensource.org/licenses/ISC"
+  },
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
