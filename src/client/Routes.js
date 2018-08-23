@@ -1,39 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Route } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+import App from './containers/App';
 
-class App extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      text: ''
-    }
-  }
-
-  componentDidMount() {
-    fetch('/api/hello')
-    .then(response => {
-      if (response.ok) {
-        return response;
-      } else {
-        let errorMessage = `${response.status} (${response.statusText})`,
-          error = new Error(errorMessage);
-        throw(error);
-      }
-    })
-    .then(response => response.json())
-    .then(body => {
-      this.setState({ text: body.text });
-    })
-    .catch(error => console.error (`Error in fetch: ${error.message}`));
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <p>Hello from the client!</p>
-        <p>{this.state.text}</p>
-      </React.Fragment>
-    );
-  }
+const Routes = (props) => {
+  return (
+    <BrowserRouter>
+      <Route path='/' component={App} />
+    </BrowserRouter>
+  );
 }
-
-export default App;
+export default Routes;
