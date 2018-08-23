@@ -1,9 +1,9 @@
 {
   "name": "Storyteller",
   "version": "1.0.0",
-  "license" :{
-    "type" : "ISC",
-    "url" : "https://opensource.org/licenses/ISC"
+  "license": {
+    "type": "ISC",
+    "url": "https://opensource.org/licenses/ISC"
   },
   "scripts": {
     "start": "react-scripts start",
