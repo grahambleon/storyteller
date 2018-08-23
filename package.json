@@ -14,13 +14,17 @@
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn start\""
   },
   "dependencies": {
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
     "express": "^4.16.2",
+    "jest-enzyme": "^6.0.3",
     "nodemon": "^1.18.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.4.2"
   },
   "devDependencies": {
     "concurrently": "^3.5.0"
