@@ -1,14 +1,9 @@
 ***Storyteller***
-An app for writing stories with your friends.
+An app for writing stories with your friends.  Built with React and Express.
 
 **Setup:**
-Here's the scripts.
-- clone the repo
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "server": "nodemon src/server/server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn start\""
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+- clone the repo
+- `yarn install`
+- `yarn dev` to start the server and client concurrently.
+- visit `http://localhost:3000/` (api endpoints are on `http://localhost:5000/`)
