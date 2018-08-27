@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class TestReactRouter extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/hello')
+    fetch('/api/testreactrouter')
     .then(response => response.json())
     .then(body => this.setState({ text: body.text }));
   }
@@ -17,11 +17,11 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <span>Hello from the client!</span>
+        <span>Testing React Router -- Client Side</span>
         <span>{this.state.text}</span>
       </React.Fragment>
     );
   }
 }
 
-export default App;
+export default TestReactRouter;
