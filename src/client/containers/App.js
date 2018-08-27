@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   constructor(props){
@@ -19,6 +20,8 @@ class App extends Component {
       <React.Fragment>
         <p>Hello from the client!</p>
         <p>{this.state.text}</p>
+        <p>-----------------</p>
+        <Link to="/testreactrouter">other page</Link>
       </React.Fragment>
     );
   }
