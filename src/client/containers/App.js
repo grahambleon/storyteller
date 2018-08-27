@@ -17,8 +17,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <span>Hello from the client!</span>
-        <span>{this.state.text}</span>
+        <p>Hello from the client!</p>
+        <p>{this.state.text}</p>
       </React.Fragment>
     );
   }

@@ -9,7 +9,7 @@ const Routes = (props) => {
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={App} />
-        <Route exact path='/beeperino' component={TestReactRouter} />
+        <Route exact path='/testreactrouter' component={TestReactRouter} />
       </Switch>
     </BrowserRouter>
   );
