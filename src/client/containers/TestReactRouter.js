@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class TestReactRouter extends Component {
   constructor(props){
@@ -20,6 +21,8 @@ class TestReactRouter extends Component {
         <span className="test-client">Testing React Router -- Client Side</span>
         <br />
         <span>{this.state.text}</span>
+        <p>-----------------</p>
+        <Link to="/">Home</Link>
       </React.Fragment>
     );
   }
