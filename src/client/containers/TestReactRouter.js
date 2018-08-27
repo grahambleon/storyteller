@@ -17,7 +17,7 @@ class TestReactRouter extends Component {
   render() {
     return (
       <React.Fragment>
-        <span>Testing React Router -- Client Side</span>
+        <span className="test-client">Testing React Router -- Client Side</span>
         <br />
         <span>{this.state.text}</span>
       </React.Fragment>
